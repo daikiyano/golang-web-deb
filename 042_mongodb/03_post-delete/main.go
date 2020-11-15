@@ -13,7 +13,7 @@ func main() {
 	r.GET("/",index)
 	r.GET("/user/:id",getUser)
 	r.POST("/user",createUser)
-	r.DELETE("/user/:id",deleteUser)
+	r.DELETE("user/:id",deleteUser)
 	http.ListenAndServe("localhost:8080",r)
 }
 
